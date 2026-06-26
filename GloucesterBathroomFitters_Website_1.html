@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gloucester Bathroom Fitters — Complete Bathroom Installations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #1B2A3B;
+    --warm-white: #F8F7F4;
+    --gold: #C9A96E;
+    --grey: #6B7280;
+    --stone: #EDE8E0;
+    --navy-light: #243548;
+    --gold-hover: #b8944f;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    background: var(--warm-white);
+    color: var(--navy);
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* ── NAVIGATION ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--navy);
+    z-index: 1000;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    border-bottom: 1px solid rgba(201,169,110,0.2);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .logo-text span:first-child {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .logo-text span:last-child {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    transition: color 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+  .nav-cta {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold) !important;
+    padding: 8px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 11px !important;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold) !important;
+    color: var(--navy) !important;
+  }
+
+  /* ── PAGES ── */
+  .page { display: none; padding-top: 72px; min-height: 100vh; }
+  .page.active { display: block; }
+
+  /* ── GOLD RULE ── */
+  .gold-rule {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 28px;
+  }
+
+  .gold-rule.left { margin: 0 0 28px; }
+
+  /* ── SECTION WRAPPER ── */
+  .section { padding: 80px 40px; max-width: 1200px; margin: 0 auto; }
+  .section-full { padding: 80px 40px; }
+  .section-bg { background: var(--stone); }
+  .section-navy { background: var(--navy); color: var(--warm-white); }
+
+  /* ── EYEBROW ── */
+  .eyebrow {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 400; line-height: 1.2; }
+  h1 { font-size: clamp(36px, 5vw, 64px); }
+  h2 { font-size: clamp(28px, 3.5vw, 44px); }
+  h3 { font-size: 22px; }
+
+  p { color: var(--grey); margin-bottom: 1em; font-weight: 300; }
+
+  /* ── HOME HERO ── */
+  .hero {
+    height: 88vh;
+    background: linear-gradient(to bottom, rgba(27,42,59,0.55) 0%, rgba(27,42,59,0.35) 60%), 
+                url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1600&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .hero-content { max-width: 640px; }
+
+  .hero h1 { color: #fff; margin-bottom: 20px; line-height: 1.1; }
+
+  .hero-sub {
+    color: rgba(255,255,255,0.85);
+    font-size: 17px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 36px;
+    line-height: 1.5;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .hero-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-badge strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--gold);
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .hero-badge span {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    font-weight: 400;
+    margin-top: 4px;
+  }
+
+  .hero-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(201,169,110,0.4);
+    align-self: center;
+  }
+
+  /* ── BUTTONS ── */
+  .btn-primary {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 14px 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .btn-primary:hover { background: var(--gold-hover); transform: translateY(-1px); }
+
+  .btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--navy);
+    padding: 13px 34px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--navy);
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover { background: var(--navy); color: #fff; }
+
+  .btn-outline-gold {
+    display: inline-block;
+    background: transparent;
+    color: var(--gold);
+    padding: 13px 34px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid var(--gold);
+    transition: all 0.2s;
+  }
+
+  .btn-outline-gold:hover { background: var(--gold); color: var(--navy); }
+
+  /* ── WHY CHOOSE US ── */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 48px;
+    margin-top: 56px;
+  }
+
+  .why-item { position: relative; padding-left: 0; }
+
+  .why-marker {
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .why-item h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--navy);
+    padding: 32px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .trust-item strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  .trust-item span {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    font-weight: 400;
+  }
+
+  .trust-divider {
+    width: 1px;
+    height: 36px;
+    background: rgba(201,169,110,0.25);
+  }
+
+  /* ── CTA BAND ── */
+  .cta-band {
+    background: var(--stone);
+    padding: 72px 40px;
+    text-align: center;
+  }
+
+  .cta-band h2 { margin-bottom: 14px; }
+  .cta-band p { max-width: 500px; margin: 0 auto 32px; }
+
+  /* ── SERVICES ── */
+  .service-intro { max-width: 680px; }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    margin: 56px 0;
+    background: var(--stone);
+    border: 1px solid var(--stone);
+  }
+
+  .service-card {
+    background: var(--warm-white);
+    padding: 36px 32px;
+    transition: background 0.2s;
+  }
+
+  .service-card:hover { background: #f0ede8; }
+
+  .service-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: var(--stone);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .service-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .service-card p { font-size: 14px; margin: 0; color: var(--grey); }
+
+  /* ── SPECIALISMS ── */
+  .specialisms {
+    background: var(--navy);
+    color: var(--warm-white);
+    padding: 80px 40px;
+  }
+
+  .spec-inner { max-width: 1200px; margin: 0 auto; }
+  .spec-inner .eyebrow { color: var(--gold); }
+  .spec-inner h2 { color: var(--warm-white); margin-bottom: 48px; }
+
+  .spec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+  }
+
+  .spec-item { border-left: 1px solid rgba(201,169,110,0.3); padding-left: 24px; }
+  .spec-item h3 { font-size: 17px; color: var(--warm-white); margin-bottom: 10px; font-weight: 400; }
+  .spec-item p { color: rgba(255,255,255,0.6); font-size: 14px; margin: 0; }
+
+  .dont-do {
+    background: var(--stone);
+    padding: 40px;
+    margin-top: 48px;
+    max-width: 640px;
+  }
+
+  .dont-do h3 { font-size: 16px; margin-bottom: 10px; color: var(--navy); }
+  .dont-do p { font-size: 14px; margin: 0; color: var(--grey); }
+
+  /* ── GALLERY ── */
+  .gallery-filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 8px 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: 1px solid var(--stone);
+    background: transparent;
+    color: var(--grey);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-btn:hover, .filter-btn.active {
+    border-color: var(--navy);
+    background: var(--navy);
+    color: #fff;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 10px;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: var(--stone);
+  }
+
+  .gallery-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+  }
+
+  .gallery-item:hover img { transform: scale(1.04); }
+
+  .gallery-item .overlay {
+    position: absolute; inset: 0;
+    background: rgba(27,42,59,0);
+    transition: background 0.3s;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+  }
+
+  .gallery-item:hover .overlay { background: rgba(27,42,59,0.45); }
+
+  .gallery-item .overlay-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-transform: uppercase;
+  }
+
+  .gallery-item:hover .overlay-label { opacity: 1; }
+
+  .span-2 { grid-column: span 2; }
+  .span-row-2 { grid-row: span 2; }
+
+  .gallery-placeholder {
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: rgba(107,114,128,0.5);
+    text-transform: uppercase;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .gallery-placeholder svg { opacity: 0.3; }
+
+  .gallery-intro-text {
+    max-width: 600px;
+    margin-bottom: 14px;
+  }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(27,42,59,0.95);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox.open { display: flex; }
+  .lightbox-close {
+    position: absolute;
+    top: 24px; right: 32px;
+    color: rgba(255,255,255,0.7);
+    font-size: 32px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .lightbox-close:hover { color: var(--gold); }
+
+  .lightbox-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ── ABOUT ── */
+  .about-hero-band {
+    background: var(--navy);
+    padding: 80px 40px 0;
+  }
+
+  .about-inner { max-width: 1200px; margin: 0 auto; }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .about-story h2 { color: #fff; margin-bottom: 24px; }
+  .about-story .eyebrow { color: var(--gold); }
+  .about-story p { color: rgba(255,255,255,0.7); }
+
+  .about-quote-pull {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--gold);
+    line-height: 1.45;
+    border-left: 2px solid var(--gold);
+    padding-left: 24px;
+    margin: 36px 0;
+  }
+
+  .about-image-block {
+    position: relative;
+    padding-top: 80px;
+  }
+
+  .about-image-mock {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--navy-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(201,169,110,0.2);
+  }
+
+  .about-credentials {
+    background: var(--warm-white);
+    padding: 48px;
+    margin-top: -60px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 1;
+    border-top: 3px solid var(--gold);
+  }
+
+  .cred-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--stone);
+    font-size: 14px;
+  }
+
+  .cred-row:last-child { border-bottom: none; }
+
+  .cred-label {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+
+  .cred-value { color: var(--navy); font-weight: 300; }
+
+  /* ── TESTIMONIALS SECTION ── */
+  .testimonials-section { background: var(--stone); padding: 80px 40px; }
+  .test-inner { max-width: 1200px; margin: 0 auto; }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .testimonial-card {
+    background: var(--warm-white);
+    padding: 36px 32px;
+    position: relative;
+  }
+
+  .stars {
+    color: var(--gold);
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .testimonial-card blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--navy);
+    margin-bottom: 24px;
+    quotes: none;
+  }
+
+  .testimonial-author {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--grey);
+    font-weight: 400;
+  }
+
+  .google-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 48px;
+    padding: 20px 28px;
+    background: var(--warm-white);
+    display: inline-flex;
+    border: 1px solid rgba(201,169,110,0.3);
+  }
+
+  .google-badge .g-stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; }
+  .google-badge .g-text { font-size: 13px; color: var(--grey); }
+  .google-badge .g-text strong { color: var(--navy); font-weight: 500; display: block; font-family: 'Playfair Display', serif; font-size: 15px; }
+
+  /* ── HOW WE WORK ── */
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 48px;
+    counter-reset: steps;
+  }
+
+  .how-step { position: relative; }
+
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: var(--stone);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .how-step h3 { font-size: 17px; margin-bottom: 10px; font-weight: 400; }
+
+  /* ── CONTACT ── */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .contact-process { }
+
+  .process-step {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+
+  .process-num {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .process-step h3 { font-size: 17px; margin-bottom: 6px; font-weight: 400; }
+  .process-step p { font-size: 14px; margin: 0; }
+
+  /* ── CONTACT FORM ── */
+  .contact-form-wrap {
+    background: var(--stone);
+    padding: 48px 40px;
+  }
+
+  .form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  .form-subtitle {
+    font-size: 13px;
+    color: var(--grey);
+    margin-bottom: 32px;
+  }
+
+  .form-group { margin-bottom: 20px; }
+
+  .form-group label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(27,42,59,0.15);
+    background: var(--warm-white);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--navy);
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: var(--gold);
+  }
+
+  .form-group textarea { height: 120px; resize: vertical; }
+
+  .form-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-submit {
+    width: 100%;
+    background: var(--navy);
+    color: #fff;
+    padding: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+  }
+
+  .form-submit:hover { background: var(--gold); color: var(--navy); }
+
+  .contact-details {
+    margin-top: 48px;
+  }
+
+  .contact-details h3 { font-size: 18px; margin-bottom: 24px; font-weight: 400; }
+
+  .contact-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .contact-icon {
+    width: 40px; height: 40px;
+    border: 1px solid var(--stone);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gold);
+    font-size: 18px;
+  }
+
+  .contact-row a { color: var(--navy); text-decoration: none; font-weight: 300; }
+  .contact-row a:hover { color: var(--gold); }
+
+  .assurance {
+    margin-top: 40px;
+    padding: 20px 24px;
+    border-left: 2px solid var(--gold);
+    background: var(--stone);
+  }
+
+  .assurance p { font-size: 13px; color: var(--grey); margin: 0; font-style: italic; }
+
+  /* ── FULL TESTIMONIALS PAGE ── */
+  .test-page-hero {
+    background: var(--navy);
+    padding: 64px 40px;
+    text-align: center;
+  }
+
+  .test-page-hero h1 { color: #fff; }
+  .test-page-hero p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 16px auto 0; }
+
+  .test-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin: 56px 0;
+  }
+
+  .test-featured {
+    background: var(--navy);
+    padding: 48px 40px;
+    text-align: center;
+    margin: 56px 0 0;
+  }
+
+  .test-featured blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--warm-white);
+    line-height: 1.5;
+    max-width: 680px;
+    margin: 0 auto 24px;
+  }
+
+  .test-featured .attr {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 56px 40px 32px;
+    border-top: 1px solid rgba(201,169,110,0.2);
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand p {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+
+  .footer-col h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-weight: 300;
+  }
+
+  .footer-col a:hover { color: rgba(255,255,255,0.9); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    margin: 0;
+    font-weight: 300;
+  }
+
+  /* ── ABOUT PAGE FULL ── */
+  .about-full-section { max-width: 760px; margin: 0 auto; }
+
+  /* ── BACK TO TOP ── */
+  .back-top {
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    cursor: pointer;
+  }
+
+  .back-top:hover { color: var(--gold); }
+
+  /* ── NOTIFICATION ── */
+  .notify {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    border-left: 3px solid var(--gold);
+    transition: transform 0.3s ease;
+    z-index: 3000;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .notify.show { transform: translateX(-50%) translateY(0); }
+
+  /* ── AREA COVERAGE ── */
+  .area-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+
+  .area-tag {
+    padding: 6px 16px;
+    border: 1px solid var(--stone);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--grey);
+    font-weight: 400;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">
+    <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/>
+      <circle cx="23" cy="24" r="4" fill="#C9A96E"/>
+    </svg>
+    <div class="logo-text">
+      <span>Gloucester</span>
+      <span>Bathroom Fitters</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+    <li><a onclick="showPage('services')" id="nav-services">Services</a></li>
+    <li><a onclick="showPage('gallery')" id="nav-gallery">Gallery</a></li>
+    <li><a onclick="showPage('about')" id="nav-about">About</a></li>
+    <li><a onclick="showPage('testimonials')" id="nav-testimonials">Reviews</a></li>
+    <li><a onclick="showPage('contact')" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 1: HOME
+═══════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Complete Bathroom Installations in Gloucester &amp; Cheltenham.</h1>
+      <p class="hero-sub">Bespoke bathroom fitting for discerning homeowners — from contemporary city spaces to classic Cotswold retreats.</p>
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <strong>25</strong>
+          <span>Years trading</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-badge">
+          <strong>900+</strong>
+          <span>Bathrooms fitted</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-badge">
+          <strong>★ 5.0</strong>
+          <span>Google rating</span>
+        </div>
+      </div>
+      <a class="btn-primary" onclick="showPage('contact')">Get a Free Quote</a>
+    </div>
+  </div>
+
+  <!-- Trust bar -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <strong>Fully Insured</strong>
+      <span>Public liability &amp; works cover</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <strong>Trading Since 1989</strong>
+      <span>Gloucestershire's local specialist</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <strong>NVQ City &amp; Guilds</strong>
+      <span>Qualified plumbing &amp; installation</span>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <strong>One Trusted Fitter</strong>
+      <span>No subcontractors, ever</span>
+    </div>
+  </div>
+
+  <!-- Why Choose Us -->
+  <div class="section">
+    <span class="eyebrow">Why Choose Us</span>
+    <div class="gold-rule left"></div>
+    <h2 style="max-width:500px;">One trusted fitter, from first fix to final finish.</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-marker"></div>
+        <h3>Full Installation, Start to Finish</h3>
+        <p>We manage every element of your new bathroom — design, plumbing, tiling, and finishing — so you have one trusted fitter, not a revolving door of tradespeople.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-marker"></div>
+        <h3>Gloucester's Local Specialist</h3>
+        <p>Based in Gloucester, we work across the city, Cheltenham, Stroud, and the surrounding Cotswold villages. We know the homes here — and how to make them shine.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-marker"></div>
+        <h3>Bespoke to Your Home</h3>
+        <p>Whether you're fitting a contemporary en-suite or restoring a period bathroom with limestone and traditional fittings, your bathroom is designed around your home, your taste and your budget.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-marker"></div>
+        <h3>25 Years of Craftsmanship</h3>
+        <p>With over 900 bathroom installations across Gloucestershire, our portfolio speaks for itself. Browse our projects and see the standard we hold every job to.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mini testimonial -->
+  <div class="section-bg">
+    <div class="section">
+      <div style="max-width:700px; margin:0 auto; text-align:center;">
+        <div class="gold-rule"></div>
+        <blockquote style="font-family:'Playfair Display',serif; font-style:italic; font-size:22px; color:var(--navy); line-height:1.5; margin-bottom:24px;">"Tim and Louis have just finished our bathroom and we are both really pleased with the work. They started on time, kept to budget and were very tidy in their work each day."</blockquote>
+        <p style="font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--grey); margin:0; font-weight:400;">— Louisa, Cheltenham &nbsp;★★★★★</p>
+        <div style="margin-top:32px;">
+          <a class="btn-outline" onclick="showPage('testimonials')">Read All Reviews</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery preview -->
+  <div class="section">
+    <span class="eyebrow">Our Work</span>
+    <div class="gold-rule left"></div>
+    <h2 style="margin-bottom:48px;">Recent projects across Gloucestershire.</h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:32px;">
+      <div class="gallery-item" style="height:260px;">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Contemporary bathroom installation in Gloucester with freestanding bath">
+        <div class="overlay"><span class="overlay-label">Contemporary · Gloucester</span></div>
+      </div>
+      <div class="gallery-item" style="height:260px;">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Modern en-suite bathroom fitted in Cheltenham">
+        <div class="overlay"><span class="overlay-label">En-Suite · Cheltenham</span></div>
+      </div>
+      <div class="gallery-item" style="height:260px;">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&q=80" alt="Traditional limestone bathroom installation in Cotswolds property">
+        <div class="overlay"><span class="overlay-label">Traditional · Cotswolds</span></div>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a class="btn-outline" onclick="showPage('gallery')">View Full Gallery</a>
+    </div>
+  </div>
+
+  <!-- CTA Band -->
+  <div class="cta-band">
+    <span class="eyebrow">Ready to Begin?</span>
+    <div class="gold-rule"></div>
+    <h2>Transform your bathroom.</h2>
+    <p>Every project starts with a free, no-obligation consultation at your home. We cover Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+    <a class="btn-primary" onclick="showPage('contact')">Book a Free Consultation</a>
+  </div>
+
+  <!-- Areas Covered -->
+  <div class="section">
+    <span class="eyebrow">Areas Covered</span>
+    <div class="gold-rule left"></div>
+    <h2 style="margin-bottom:8px;">We come to you.</h2>
+    <p>We serve homeowners across Gloucester, Cheltenham and throughout Gloucestershire.</p>
+    <div class="area-tags">
+      <span class="area-tag">Gloucester</span>
+      <span class="area-tag">Cheltenham</span>
+      <span class="area-tag">Stroud</span>
+      <span class="area-tag">Quedgeley</span>
+      <span class="area-tag">Cirencester</span>
+      <span class="area-tag">Tetbury</span>
+      <span class="area-tag">Bourton-on-the-Water</span>
+      <span class="area-tag">Chipping Campden</span>
+      <span class="area-tag">Tewkesbury</span>
+      <span class="area-tag">Nearby Cotswolds villages</span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 36 36" fill="none">
+            <rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/>
+            <circle cx="23" cy="24" r="4" fill="#C9A96E"/>
+          </svg>
+          <p>Complete bathroom installations for discerning homeowners across Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a onclick="showPage('home')">Home</a>
+          <a onclick="showPage('services')">Services</a>
+          <a onclick="showPage('gallery')">Gallery</a>
+          <a onclick="showPage('about')">About Tim</a>
+          <a onclick="showPage('testimonials')">Reviews</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a onclick="showPage('services')">Full Bathroom Installation</a>
+          <a onclick="showPage('services')">En-Suite Fitting</a>
+          <a onclick="showPage('services')">Natural Stone &amp; Limestone</a>
+          <a onclick="showPage('services')">Freestanding Baths</a>
+          <a onclick="showPage('services')">Accessible Bathrooms</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a>07989 840962</a>
+          <a>timdeane@hotmail.com</a>
+          <a onclick="showPage('contact')">Get a Free Quote</a>
+          <a onclick="showPage('contact')">Book Consultation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gloucester Bathroom Fitters · Tim Deane · gloucesterbathroomfitters.co.uk</p>
+        <p>Trading since 1989 · 900+ bathrooms installed across Gloucestershire</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 2: SERVICES
+═══════════════════════════════════════════════════ -->
+<div class="page" id="page-services">
+  
+  <div class="section" style="padding-top:80px;">
+    <span class="eyebrow">Our Services</span>
+    <div class="gold-rule left"></div>
+    <div class="service-intro">
+      <h1>Bathroom Installation Services</h1>
+      <p style="margin-top:20px;">We offer a complete, end-to-end bathroom installation service for homeowners across Gloucester, Cheltenham and Stroud. Every project is managed by Tim personally — from the initial design consultation through to the final finish. No subcontractors, no surprises, just exceptional results.</p>
+    </div>
+  </div>
+
+  <!-- Services grid -->
+  <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+    <h2 style="margin-bottom:8px;">What's Included in Every Installation</h2>
+    <p style="margin-bottom:0; max-width:560px;">We handle everything, so you don't have to coordinate multiple trades.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <h3>Design Consultation</h3>
+        <p>We start by understanding your home, your style and your vision. Whether you have a clear idea or need guidance, we'll help you make the right choices — from layout and fixtures to tiles and finishes.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <h3>Full Strip Out &amp; Preparation</h3>
+        <p>Every installation begins with a clean slate. We remove all existing fittings, prepare the walls and floors properly, and ensure everything is watertight before a single tile goes up.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <h3>Plumbing &amp; First Fix</h3>
+        <p>All pipework, waste and supply are handled to the highest standard. We work cleanly and efficiently, protecting your home throughout.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <h3>Tiling &amp; Flooring</h3>
+        <p>From large-format porcelain and contemporary glass tiles to natural limestone and traditional stone, our tiling is precise, beautifully finished and built to last.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <h3>Fixture &amp; Fitting Installation</h3>
+        <p>Baths, showers, basins, vanity units, WCs, heated towel rails — everything fitted with care and aligned perfectly. We work with all leading bathroom brands and can advise on suppliers.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <h3>Finishing &amp; Snagging</h3>
+        <p>Every project finishes with a thorough snagging check. We don't consider a job complete until every detail is right and you are completely happy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Specialisms -->
+  <div class="specialisms">
+    <div class="spec-inner">
+      <span class="eyebrow">Specialisms</span>
+      <div class="gold-rule left" style="background:var(--gold);"></div>
+      <h2>Where we excel.</h2>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <h3>Freestanding Bath Installations</h3>
+          <p>The centrepiece of any classic bathroom. We have extensive experience positioning and plumbing freestanding baths to make the most of your space.</p>
+        </div>
+        <div class="spec-item">
+          <h3>Natural Stone &amp; Limestone</h3>
+          <p>Sympathetic to period and Cotswold properties, we work regularly with limestone, travertine and natural stone — materials that require skill and experience to install correctly.</p>
+        </div>
+        <div class="spec-item">
+          <h3>En-Suite Installations</h3>
+          <p>Maximising smaller spaces without compromising on quality. En-suites designed to feel considered and complete, not an afterthought.</p>
+        </div>
+        <div class="spec-item">
+          <h3>Accessible &amp; Walk-In Bathrooms</h3>
+          <p>Thoughtfully designed bathrooms that don't sacrifice elegance for accessibility. Walk-in showers, low-threshold baths and grab rail installation handled sensitively.</p>
+        </div>
+      </div>
+      <div class="dont-do">
+        <h3>What We Don't Do</h3>
+        <p>We focus exclusively on complete bathroom installations and renovations. We don't take on small repair jobs, leak fixes or single appliance replacements — this keeps our diary focused on the projects we do best, and means our clients get our full attention.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <span class="eyebrow">Ready to Plan Your New Bathroom?</span>
+    <div class="gold-rule"></div>
+    <h2>Every project starts with a free consultation.</h2>
+    <p>Visit your home, take measurements, discuss your ideas. No hard sell, no pressure.</p>
+    <a class="btn-primary" onclick="showPage('contact')">Book a Free Consultation</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/><circle cx="23" cy="24" r="4" fill="#C9A96E"/></svg>
+          <p>Complete bathroom installations for discerning homeowners across Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a onclick="showPage('home')">Home</a>
+          <a onclick="showPage('services')">Services</a>
+          <a onclick="showPage('gallery')">Gallery</a>
+          <a onclick="showPage('about')">About Tim</a>
+          <a onclick="showPage('contact')">Get a Quote</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a>07989 840962</a>
+          <a>timdeane@hotmail.com</a>
+        </div>
+        <div class="footer-col">
+          <h4>Areas</h4>
+          <a>Gloucester</a>
+          <a>Cheltenham</a>
+          <a>Stroud</a>
+          <a>Cotswolds villages</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gloucester Bathroom Fitters · Tim Deane</p>
+        <p>Trading since 1989 · Fully insured</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 3: GALLERY
+═══════════════════════════════════════════════════ -->
+<div class="page" id="page-gallery">
+  <div class="section">
+    <span class="eyebrow">Our Work</span>
+    <div class="gold-rule left"></div>
+    <h1 style="margin-bottom:14px;">Gallery</h1>
+    <p class="gallery-intro-text">Bathroom installations across Gloucester, Cheltenham, Stroud and the Cotswolds. Every project is managed personally by Tim Deane, from first consultation to final finish.</p>
+
+    <!-- Filters -->
+    <div class="gallery-filters">
+      <button class="filter-btn active" onclick="filterGallery('all', this)">All Projects</button>
+      <button class="filter-btn" onclick="filterGallery('modern', this)">Modern</button>
+      <button class="filter-btn" onclick="filterGallery('traditional', this)">Traditional</button>
+      <button class="filter-btn" onclick="filterGallery('ensuite', this)">En-Suite</button>
+      <button class="filter-btn" onclick="filterGallery('family', this)">Family Bathroom</button>
+    </div>
+
+    <!-- Masonry/paving gallery grid -->
+    <div class="gallery-grid" id="gallery-grid">
+
+      <!-- Row 1 -->
+      <div class="gallery-item span-2" data-cat="modern" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=80" alt="Modern bathroom installation in Gloucester with walk-in shower">
+        <div class="overlay"><span class="overlay-label">Modern · Gloucester · Walk-in shower</span></div>
+      </div>
+      <div class="gallery-item span-row-2" data-cat="traditional" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&q=80" alt="Traditional bathroom fitted in Cheltenham with freestanding bath">
+        <div class="overlay"><span class="overlay-label">Traditional · Cheltenham · Freestanding bath</span></div>
+      </div>
+      <div class="gallery-item" data-cat="ensuite" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="En-suite installation in Gloucester city centre">
+        <div class="overlay"><span class="overlay-label">En-Suite · Gloucester</span></div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="gallery-item" data-cat="modern" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?w=600&q=80" alt="Contemporary wet room installation in Quedgeley with full tiling">
+        <div class="overlay"><span class="overlay-label">Wet Room · Quedgeley</span></div>
+      </div>
+      <div class="gallery-item" data-cat="family" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1620626011761-996317702782?w=600&q=80" alt="Family bathroom fitted in Stroud with full tiling and freestanding bath">
+        <div class="overlay"><span class="overlay-label">Family Bathroom · Stroud</span></div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="gallery-item" data-cat="traditional" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=600&q=80" alt="Limestone bathroom installation in Cotswolds period property">
+        <div class="overlay"><span class="overlay-label">Limestone · Cotswolds</span></div>
+      </div>
+      <div class="gallery-item span-2" data-cat="modern" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=900&q=80" alt="Modern en-suite fitted in Cheltenham new build">
+        <div class="overlay"><span class="overlay-label">Modern En-Suite · Cheltenham</span></div>
+      </div>
+      <div class="gallery-item" data-cat="ensuite" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?w=600&q=80" alt="Contemporary en-suite installation in Gloucester">
+        <div class="overlay"><span class="overlay-label">En-Suite · Gloucester</span></div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="gallery-item" data-cat="family" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80" alt="Family bathroom with full tiling in Cheltenham">
+        <div class="overlay"><span class="overlay-label">Family Bathroom · Cheltenham</span></div>
+      </div>
+      <div class="gallery-item span-row-2" data-cat="traditional" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?w=600&q=80" alt="Period property bathroom restoration in Cotswolds village">
+        <div class="overlay"><span class="overlay-label">Period Property · Cotswolds</span></div>
+      </div>
+      <div class="gallery-item span-2" data-cat="modern" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=80" alt="Modern bathroom with brass tap detail installed in Gloucester">
+        <div class="overlay"><span class="overlay-label">Modern · Gloucester · Brass fittings</span></div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="gallery-item" data-cat="ensuite" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="En-suite bathroom with walk-in shower in Stroud">
+        <div class="overlay"><span class="overlay-label">En-Suite · Stroud</span></div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:56px; padding-top:48px; border-top:1px solid var(--stone);">
+      <p style="margin-bottom:24px; font-style:italic; font-family:'Playfair Display',serif; font-size:17px; color:var(--navy);">Working on your next project? We'd love to hear about it.</p>
+      <a class="btn-primary" onclick="showPage('contact')">Get a Free Quote</a>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/><circle cx="23" cy="24" r="4" fill="#C9A96E"/></svg>
+          <p>Complete bathroom installations across Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a onclick="showPage('home')">Home</a>
+          <a onclick="showPage('services')">Services</a>
+          <a onclick="showPage('gallery')">Gallery</a>
+          <a onclick="showPage('about')">About Tim</a>
+          <a onclick="showPage('contact')">Get a Quote</a>
+        </div>
+        <div class="footer-col"><h4>Contact</h4><a>07989 840962</a><a>timdeane@hotmail.com</a></div>
+        <div class="footer-col"><h4>Areas</h4><a>Gloucester</a><a>Cheltenham</a><a>Stroud</a><a>Cotswolds villages</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gloucester Bathroom Fitters · Tim Deane</p>
+        <p>Trading since 1989 · Fully insured</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 4: ABOUT
+═══════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+
+  <div class="about-hero-band">
+    <div class="about-inner">
+      <div class="about-grid">
+        <div class="about-story">
+          <span class="eyebrow">About</span>
+          <div class="gold-rule left" style="background:var(--gold);"></div>
+          <h1 style="color:#fff; margin-bottom:24px;">Meet Tim Deane.</h1>
+          <p style="color:rgba(255,255,255,0.75);">There's a real difference between a bathroom that's been fitted and one that's been crafted. At Gloucester Bathroom Fitters, every project gets the same attention — the same care on the final grout line as on the first fix.</p>
+          <p style="color:rgba(255,255,255,0.75);">Tim has been fitting bathrooms across Gloucester and Gloucestershire for 25 years. What started as a passion for getting things right — properly right — has grown into one of the area's most trusted bathroom installation businesses.</p>
+          <p style="color:rgba(255,255,255,0.75);">Having worked on everything from sleek contemporary apartments in Cheltenham to centuries-old Cotswold stone cottages in Stroud, Tim brings genuine versatility to every project.</p>
+          <div class="about-quote-pull">"I've always believed that a new bathroom should feel like a treat every single time you use it."</div>
+          <p style="color:rgba(255,255,255,0.5); font-size:13px; margin-bottom:48px;">— Tim Deane, Gloucester Bathroom Fitters</p>
+        </div>
+        <div class="about-image-block">
+          <div class="about-image-mock">
+            <div style="text-align:center; color:rgba(201,169,110,0.4);">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                <rect x="3" y="3" width="18" height="18" rx="1"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21,15 16,10 5,21"/>
+              </svg>
+              <p style="font-size:10px; letter-spacing:0.14em; text-transform:uppercase; margin-top:12px; color:rgba(201,169,110,0.4); font-weight:400;">Photo of Tim<br>to be added</p>
+            </div>
+          </div>
+          <div class="about-credentials">
+            <div class="cred-row">
+              <span class="cred-label">Based in</span>
+              <span class="cred-value">Gloucester, Gloucestershire</span>
+            </div>
+            <div class="cred-row">
+              <span class="cred-label">Trading since</span>
+              <span class="cred-value">1989</span>
+            </div>
+            <div class="cred-row">
+              <span class="cred-label">Bathrooms installed</span>
+              <span class="cred-value">900+</span>
+            </div>
+            <div class="cred-row">
+              <span class="cred-label">Insurance</span>
+              <span class="cred-value">Fully insured — public liability &amp; works cover</span>
+            </div>
+            <div class="cred-row">
+              <span class="cred-label">Qualifications</span>
+              <span class="cred-value">NVQ City &amp; Guilds in Plumbing</span>
+            </div>
+            <div class="cred-row">
+              <span class="cred-label">Areas covered</span>
+              <span class="cred-value">Gloucester, Cheltenham, Stroud &amp; Cotswolds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How We Work -->
+  <div class="section">
+    <span class="eyebrow">How We Work</span>
+    <div class="gold-rule left"></div>
+    <h2>A craft, not a volume business.</h2>
+    <p style="max-width:560px; margin-top:8px;">Every project is handled personally by Tim. You won't find subcontractors or unfamiliar faces in your home — just one skilled, reliable fitter who takes responsibility for every stage of the work.</p>
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="step-num">I</div>
+        <h3>Personal Consultation</h3>
+        <p>We visit your home, discuss your vision and take measurements. No pressure, no hard sell — just honest advice about what will work beautifully in your space.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">II</div>
+        <h3>Detailed Quote</h3>
+        <p>A clear, itemised written quote so you know exactly what's included. No hidden extras, no vague estimates.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">III</div>
+        <h3>Careful Installation</h3>
+        <p>Tim personally manages every element — from the first fix plumbing through to the final tile. Your home is respected throughout.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">IV</div>
+        <h3>Thorough Snagging</h3>
+        <p>Every project finishes with a thorough check. We don't consider a job complete until every detail is right and you're completely happy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials on About -->
+  <div class="testimonials-section">
+    <div class="test-inner">
+      <span class="eyebrow">What Our Clients Say</span>
+      <div class="gold-rule left"></div>
+      <h2>Words from happy homeowners.</h2>
+      <div class="testimonials-grid" style="margin-top:40px;">
+        <div class="testimonial-card">
+          <span class="stars">★★★★★</span>
+          <blockquote>"Tim and Louis have just finished our bathroom and we are both really pleased with the work. They started on time, kept to budget and were very tidy in their work each day."</blockquote>
+          <p class="testimonial-author">— Louisa, Cheltenham</p>
+        </div>
+        <div class="testimonial-card">
+          <span class="stars">★★★★★</span>
+          <blockquote>"The bathroom was left in an immaculate condition after the works were completed and we really felt in great, trustworthy hands. Thanks to both for the great job. We would highly recommend."</blockquote>
+          <p class="testimonial-author">— Becky, Stroud</p>
+        </div>
+        <div class="testimonial-card">
+          <span class="stars">★★★★★</span>
+          <blockquote>"Tim completely transformed our outdated family bathroom into something we are genuinely proud of. The attention to detail was extraordinary and the finish is perfect."</blockquote>
+          <p class="testimonial-author">— Andrew &amp; Sarah, Gloucester</p>
+        </div>
+      </div>
+      <div style="margin-top:36px;">
+        <div class="google-badge">
+          <div>
+            <strong class="g-stars">★★★★★</strong>
+          </div>
+          <div class="g-text">
+            <strong>5.0 on Google Reviews</strong>
+            Read all our reviews on Google
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <span class="eyebrow">Let's Talk</span>
+    <div class="gold-rule"></div>
+    <h2>Let's talk about your bathroom.</h2>
+    <p>Get in touch to arrange a free home consultation across Gloucester, Cheltenham &amp; Stroud.</p>
+    <a class="btn-primary" onclick="showPage('contact')">Get in Touch</a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/><circle cx="23" cy="24" r="4" fill="#C9A96E"/></svg>
+          <p>Complete bathroom installations across Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+        </div>
+        <div class="footer-col"><h4>Pages</h4><a onclick="showPage('home')">Home</a><a onclick="showPage('services')">Services</a><a onclick="showPage('gallery')">Gallery</a><a onclick="showPage('about')">About Tim</a><a onclick="showPage('contact')">Get a Quote</a></div>
+        <div class="footer-col"><h4>Contact</h4><a>07989 840962</a><a>timdeane@hotmail.com</a></div>
+        <div class="footer-col"><h4>Areas</h4><a>Gloucester</a><a>Cheltenham</a><a>Stroud</a><a>Cotswolds villages</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gloucester Bathroom Fitters · Tim Deane</p>
+        <p>Trading since 1989 · Fully insured</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 5: CONTACT
+═══════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+
+  <div style="background:var(--navy); padding:64px 40px 56px;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <span class="eyebrow">Get in Touch</span>
+      <div class="gold-rule left" style="background:var(--gold);"></div>
+      <h1 style="color:#fff; max-width:520px;">Get a Free Bathroom Installation Quote.</h1>
+      <p style="color:rgba(255,255,255,0.65); max-width:500px; margin-top:16px;">Every new bathroom starts with a conversation. We cover Gloucester, Cheltenham, Stroud &amp; nearby Cotswold villages.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="contact-grid">
+
+      <!-- Process steps -->
+      <div class="contact-process">
+        <h2 style="margin-bottom:40px;">How it works.</h2>
+        <div class="process-step">
+          <div class="process-num">1</div>
+          <div>
+            <h3>Get in Touch</h3>
+            <p>Call, email or fill in the form with a brief description of your project. Don't worry if you're not sure yet — that's what the consultation is for.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">2</div>
+          <div>
+            <h3>Free Home Consultation</h3>
+            <p>We visit your home, take measurements, discuss your ideas and give you honest, practical advice. No hard sell, no pressure.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">3</div>
+          <div>
+            <h3>Detailed Quote</h3>
+            <p>We provide a clear, itemised written quote so you know exactly what's included. No hidden extras, no vague estimates.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">4</div>
+          <div>
+            <h3>Your Project Begins</h3>
+            <p>Once you're happy to proceed, we agree a start date and manage everything from that point — right through to your beautiful finished bathroom.</p>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <h3>Or reach us directly</h3>
+          <div class="contact-row">
+            <div class="contact-icon">✆</div>
+            <div>
+              <a href="tel:07989840962">07989 840962</a>
+              <p style="font-size:12px; margin:2px 0 0; color:var(--grey);">Best way to reach us — happy to chat</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">✉</div>
+            <div>
+              <a href="mailto:timdeane@hotmail.com">timdeane@hotmail.com</a>
+              <p style="font-size:12px; margin:2px 0 0; color:var(--grey);">We aim to respond within 24 hours</p>
+            </div>
+          </div>
+          <div class="assurance">
+            <p>All enquiries are handled personally by Tim. Your details are never shared with third parties.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="contact-form-wrap">
+        <p class="form-title">Send an Enquiry</p>
+        <p class="form-subtitle">Fill in the form and we'll be in touch within 24 hours to arrange your free consultation.</p>
+        <div class="form-2col">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="e.g. Sarah Thompson">
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="e.g. 07700 000000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Town / Village *</label>
+          <input type="text" placeholder="e.g. Cheltenham">
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project</label>
+          <textarea placeholder="A brief description — e.g. 'Full family bathroom replacement in a 1930s semi in Gloucester. Looking to keep it contemporary.'"></textarea>
+        </div>
+        <div class="form-group">
+          <label>How did you hear about us?</label>
+          <select>
+            <option value="" disabled selected>Please select…</option>
+            <option>Google</option>
+            <option>Personal recommendation</option>
+            <option>Checkatrade</option>
+            <option>Instagram</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button class="form-submit" onclick="submitForm()">Send Enquiry</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/><circle cx="23" cy="24" r="4" fill="#C9A96E"/></svg>
+          <p>Complete bathroom installations across Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+        </div>
+        <div class="footer-col"><h4>Pages</h4><a onclick="showPage('home')">Home</a><a onclick="showPage('services')">Services</a><a onclick="showPage('gallery')">Gallery</a><a onclick="showPage('about')">About Tim</a></div>
+        <div class="footer-col"><h4>Contact</h4><a>07989 840962</a><a>timdeane@hotmail.com</a></div>
+        <div class="footer-col"><h4>Areas</h4><a>Gloucester</a><a>Cheltenham</a><a>Stroud</a><a>Cotswolds villages</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gloucester Bathroom Fitters · Tim Deane</p>
+        <p>Trading since 1989 · Fully insured</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 6: TESTIMONIALS
+═══════════════════════════════════════════════════ -->
+<div class="page" id="page-testimonials">
+
+  <div class="test-page-hero">
+    <span class="eyebrow" style="display:block; text-align:center;">Reviews</span>
+    <div class="gold-rule"></div>
+    <h1 style="color:#fff;">What our clients say.</h1>
+    <p>Trusted by homeowners across Gloucester, Cheltenham, Stroud and the Cotswolds since 1989.</p>
+    <div style="margin-top:24px;">
+      <span style="font-size:22px; color:var(--gold); letter-spacing:3px;">★★★★★</span>
+      <p style="color:rgba(255,255,255,0.5); font-size:12px; letter-spacing:0.14em; text-transform:uppercase; margin-top:6px; margin-bottom:0;">5.0 on Google Reviews</p>
+    </div>
+  </div>
+
+  <!-- Featured quote -->
+  <div class="test-featured">
+    <blockquote>"I've always believed that a new bathroom should feel like a treat every single time you use it. That's the standard I hold myself to on every job — whether it's a compact en-suite or a full family bathroom renovation."</blockquote>
+    <p class="attr">— Tim Deane, Gloucester Bathroom Fitters</p>
+  </div>
+
+  <div class="section">
+    <span class="eyebrow">Client Reviews</span>
+    <div class="gold-rule left"></div>
+    <h2 style="margin-bottom:14px;">Verified reviews from Gloucestershire homeowners.</h2>
+    <p style="max-width:560px;">All reviews are from real clients across Gloucester, Cheltenham, Stroud and the surrounding Cotswold villages.</p>
+
+    <div class="test-masonry">
+      <div class="testimonial-card">
+        <span class="stars">★★★★★</span>
+        <blockquote>"Tim and Louis have just finished our bathroom and we are both really pleased with the work. They started on time, kept to budget and were very tidy in their work each day."</blockquote>
+        <p class="testimonial-author">— Louisa, Cheltenham</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="stars">★★★★★</span>
+        <blockquote>"The bathroom was left in an immaculate condition after the works were completed and we really felt in great, trustworthy hands. Thanks to both for the great job. We would highly recommend."</blockquote>
+        <p class="testimonial-author">— Becky, Stroud</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="stars">★★★★★</span>
+        <blockquote>"Tim completely transformed our outdated en-suite into something we're genuinely proud of. His attention to detail is extraordinary — the tiling and finishing are immaculate."</blockquote>
+        <p class="testimonial-author">— Andrew &amp; Sarah, Gloucester</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="stars">★★★★★</span>
+        <blockquote>"We couldn't be happier with our new bathroom. Tim was professional, punctual, and the quality of the work is outstanding. Our limestone bathroom looks exactly as we'd hoped."</blockquote>
+        <p class="testimonial-author">— Claire, Cotswolds</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="stars">★★★★★</span>
+        <blockquote>"Brilliant from start to finish. Tim understood exactly what we wanted and delivered something even better than we imagined. I'd recommend him without hesitation."</blockquote>
+        <p class="testimonial-author">— Michael, Cheltenham</p>
+      </div>
+      <div class="testimonial-card">
+        <span class="stars">★★★★★</span>
+        <blockquote>"Our family bathroom is now unrecognisable — in the best possible way. Tim kept us informed throughout the whole project and the results are stunning."</blockquote>
+        <p class="testimonial-author">— Jenny &amp; Robert, Stroud</p>
+      </div>
+    </div>
+
+    <div style="margin-top:48px; padding:36px 40px; background:var(--stone); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:24px;">
+      <div>
+        <p style="font-size:13px; color:var(--grey); margin-bottom:6px; font-weight:400; letter-spacing:0.1em; text-transform:uppercase;">Also find us on</p>
+        <p style="font-size:15px; color:var(--navy); margin:0; font-family:'Playfair Display', serif;">Google · Checkatrade · Rated People</p>
+      </div>
+      <a class="btn-primary" onclick="showPage('contact')">Get a Free Quote</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="32" height="32" stroke="#C9A96E" stroke-width="1.2"/><circle cx="23" cy="24" r="4" fill="#C9A96E"/></svg>
+          <p>Complete bathroom installations across Gloucester, Cheltenham, Stroud &amp; the Cotswolds.</p>
+        </div>
+        <div class="footer-col"><h4>Pages</h4><a onclick="showPage('home')">Home</a><a onclick="showPage('services')">Services</a><a onclick="showPage('gallery')">Gallery</a><a onclick="showPage('about')">About Tim</a><a onclick="showPage('contact')">Get a Quote</a></div>
+        <div class="footer-col"><h4>Contact</h4><a>07989 840962</a><a>timdeane@hotmail.com</a></div>
+        <div class="footer-col"><h4>Areas</h4><a>Gloucester</a><a>Cheltenham</a><a>Stroud</a><a>Cotswolds villages</a></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Gloucester Bathroom Fitters · Tim Deane</p>
+        <p>Trading since 1989 · Fully insured</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- Notification toast -->
+<div class="notify" id="notify">Thank you — we'll be in touch within 24 hours.</div>
+
+<script>
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    var navEl = document.getElementById('nav-' + name);
+    if (navEl) navEl.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      if (cat === 'all' || item.dataset.cat === cat) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function openLightbox(el) {
+    var img = el.querySelector('img');
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+  }
+
+  function closeLightbox(e) {
+    if (e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-close')) {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('open');
+  });
+
+  function submitForm() {
+    var notify = document.getElementById('notify');
+    notify.classList.add('show');
+    setTimeout(function() { notify.classList.remove('show'); }, 4000);
+  }
+</script>
+
+</body>
+</html>
